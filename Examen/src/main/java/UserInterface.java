@@ -41,7 +41,7 @@ public class UserInterface {
         Plane plane = new Plane(rows, cols);
         System.out.println("Este es el mapa del avión:");
         System.out.println(plane);
-        
+    
         while (true) {
             
               this.opciones();

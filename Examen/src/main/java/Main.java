@@ -10,7 +10,6 @@ public class Main {
         UserInterface interf = new UserInterface(pasajero , scanner);
         interf.start();
         
-        System.out.println(pasajero);
 
     }
 }

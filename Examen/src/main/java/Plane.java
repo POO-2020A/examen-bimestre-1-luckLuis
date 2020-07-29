@@ -13,16 +13,18 @@ public class Plane {
         this.seats = new ArrayList<>();
     }
     
-    @Override
+@Override
     public String toString() {
+                    
         String[] letras = {"A", "B", "C", "D", "E", "F", "G", "H"};
         String tabla = "";
-
+        
 
         for (int i = 0; i < this.rows; i++) {
             tabla += (i + 1) + " ";
 
             for (int j = 0; j < this.cols; j++) {
+                
                 tabla += letras[j] + " ";
             }
             tabla += "\n";

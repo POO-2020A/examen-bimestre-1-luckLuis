@@ -13,9 +13,18 @@ public class Seat {
         return true;
         }
         return false;
-    }
+    } 
     
     @Override
+    public String toString(){
+        if(this.equals(passenger)){
+            return "Asiento: " + this.row + this.col + "libre.";
+        }
+        return "Asiento: " + this.row + this.col + " ocupado. Pasajero: " + 
+                this.passenger.getName() + " " + this.passenger.getLastname();
+    }
+    
+     @Override
     public boolean equals(Object compared){
         if(this == null){
             return false;
@@ -34,14 +43,31 @@ public class Seat {
         }
          return false;
     }
-    
-    @Override
-    public String toString(){
-        if(this.equals(passenger)){
-            return "Asiento: " + this.row + this.col + "libre.";
-        }
-        return "Asiento: " + this.row + this.col + " ocupado. Pasajero: " + 
-                this.passenger.getName() + " " + this.passenger.getLastname();
+
+    public int getRow() {
+        return row;
     }
+
+    public String getCol() {
+        return col;
+    }
+
+    public Passenger getPassenger() {
+        return passenger;
+    }
+
+    public void setRow(int row) {
+        this.row = row;
+    }
+
+    public void setCol(String col) {
+        this.col = col;
+    }
+
+    public void setPassenger(Passenger passenger) {
+        this.passenger = passenger;
+    }
+    
+    
     
 }
